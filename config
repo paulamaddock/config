@@ -1,0 +1,122 @@
+[global_config]
+  title_transmit_bg_color = "#670c0e"
+[keybindings]
+[profiles]
+  [[blue]]
+    background_image = None
+    background_color = "#0f0497"
+    foreground_color = "#14f805"
+  [[gray]]
+    background_image = None
+    background_color = "#6e6767"
+    foreground_color = "#f7fa85"
+  [[turquoise]]
+    background_image = None
+    background_color = "#4a8f98"
+    foreground_color = "#f4e6e6"
+  [[matrix]]
+    background_image = None
+    foreground_color = "#3bd502"
+  [[gis_data_manager]]
+    background_image = None
+    exit_action = hold
+  [[default]]
+    background_image = None
+  [[tail]]
+    background_image = None
+  [[red]]
+    background_image = None
+    background_color = "#ad1419"
+    foreground_color = "#e6e3e3"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = matrix
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[New Layout]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 722, 451
+    [[[terminal1]]]
+      profile = matrix
+      type = Terminal
+      order = 0
+      parent = child0
+  [[datamanager]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 1920, 1056
+    [[[child1]]]
+      position = 989
+      type = HPaned
+      order = 0
+      parent = child0
+    [[[child3]]]
+      position = 528
+      type = VPaned
+      order = 1
+      parent = child1
+    [[[terminal2]]]
+      profile = red
+      type = Terminal
+      order = 0
+      parent = child1
+      command = cd /home/pmaddock/dev/ijus/code/gis_web/GISDataManager; bash;
+    [[[terminal5]]]
+      profile = blue
+      type = Terminal
+      order = 1
+      parent = child3
+      command = cd /home/pmaddock/dev/ijus/code/gis_web/GISDataManager; bash;
+    [[[terminal4]]]
+      profile = turquoise
+      type = Terminal
+      order = 0
+      parent = child3
+      command = cd /home/pmaddock/dev/ijus/code/gis_web/GISDataManager; bash;
+  [[server]]
+    [[[child0]]]
+      position = 0:24
+      type = Window
+      order = 0
+      parent = ""
+      size = 1920, 1056
+    [[[child1]]]
+      position = 989
+      type = HPaned
+      order = 0
+      parent = child0
+    [[[child3]]]
+      position = 528
+      type = VPaned
+      order = 1
+      parent = child1
+    [[[terminal2]]]
+      profile = red
+      type = Terminal
+      order = 0
+      parent = child1
+      command = bash;
+    [[[terminal5]]]
+      profile = blue
+      type = Terminal
+      order = 1
+      parent = child3
+      command = bash;
+    [[[terminal4]]]
+      profile = turquoise
+      type = Terminal
+      order = 0
+      parent = child3
+      command = bash;
+[plugins]
